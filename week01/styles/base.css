@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f8f7; /* Neutral Light */
+    color: #505050; /* Neutral Dark */
+}
+
+header {
+    background-color: #2a635e; /* Dark Accent */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    background-color: #bfffe4; /* Main Color */
+    border-radius: 4px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #e6fffb; /* Light Accent */
+}
+
+.card {
+    background-color: #ffffff; /* White */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+aside {
+    background-color: #ffffff; /* White */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #2a635e; /* Dark Accent */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+a {
+    color: #2a635e; /* Dark Accent */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffbfc4; /* Complementary Color */
+}
