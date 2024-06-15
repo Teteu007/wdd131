@@ -37,7 +37,7 @@ main {
     gap: 1rem;
     max-width: 1200px;
     padding: 1rem;
-    background-color: #e6fffb; 
+    background-color: white; 
     border-radius: 8px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
