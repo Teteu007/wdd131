@@ -1,22 +1,24 @@
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0%;
     background-color: #f0f8f7; 
+    color: #505050;
 }
 
 header {
-    background-color: #2a635e; 
+    background-color: #004080; 
     color: white;
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
+    grid-column: 1/4;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
+    background-color: #505050;
+    grid-column: 1/4;
 }
 
 nav a {
@@ -26,42 +28,67 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #bfffe4; 
+    background-color: #004080; 
     border-radius: 4px;
 }
 
 main {
     display: grid;
-    grid-template-columns: 1fr;
     gap: 1rem;
-    max-width: 800px;
-    margin: 1rem auto;
+    max-width: 1200px;
     padding: 1rem;
     background-color: #e6fffb; 
+    border-radius: 8px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }
-
+h2{
+    background-color: #004080;
+    color: #ffffff;
+}
 .card {
     background-color: #ffffff; 
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 10px 10px;
+    grid-column: 1/4;  
+    border:solid 1px #000000;  
 }
 
+.card h1 {
+    text-align: center;
+}
+
+.card h2 {
+    text-align: center;
+    margin: 0%;
+    border-radius: 10px 10px 0px 0px;
+    padding: 7px;
+}
+.card p {
+     margin: 10px;
+}
 .card img {
-    max-width: 100%;
+    max-width: 30%;
     height: auto;
-    border-radius: 8px;
+    margin: 10px;
 }
 
 aside {
-    background-color: #ffffff; 
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    grid-column: 4/5;
+    border:solid 1px #000000;
+    border-radius: 10px 10px 10px 10px;
 }
 
+
+
+aside h2 {
+    text-align: center;
+    margin: 0%;
+    border-radius: 10px 10px 0px 0px;
+    padding: 7px;
+}
 footer {
-    background-color: #2a635e; 
+    background-color: #004080; 
     color: white;
     text-align: center;
     padding: 1rem;
@@ -72,10 +99,14 @@ footer p {
 }
 
 a {
-    color: #2a635e; 
+    color: #004080; 
     text-decoration: none;
 }
 
-a:hover {
-    color: #ffbfc4; 
+nav a:hover {
+    color: white; 
+}
+
+aside a:hover {
+    color: #505050; 
 }
