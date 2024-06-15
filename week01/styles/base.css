@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0%;
+    margin: 0;
     background-color: #f0f8f7; 
     color: #505050;
 }
@@ -10,7 +10,7 @@ header {
     color: white;
     padding: 2rem;
     text-align: center;
-    grid-column: 1/4;
+    grid-column: 1 / -1;
 }
 
 nav {
@@ -18,7 +18,7 @@ nav {
     justify-content: center;
     gap: 2rem;
     background-color: #505050;
-    grid-column: 1/4;
+    grid-column: 1 / -1;
 }
 
 nav a {
@@ -35,37 +35,37 @@ nav a:hover {
 main {
     display: grid;
     gap: 1rem;
-    max-width: 1200px;
     padding: 1rem;
     background-color: white; 
     border-radius: 8px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    margin: auto;
+    grid-template-columns: 3fr 1fr;
 }
-h2{
+
+h2 {
     background-color: #004080;
     color: #ffffff;
 }
+
 .card {
     background-color: #ffffff; 
-    border-radius: 10px 10px 10px 10px;
-    grid-column: 1/4;  
-    border:solid 1px #000000;  
+    border-radius: 10px;
+    border: solid 1px #000000;  
+    
+    grid-column: 1 / 2;
 }
 
-.card h1 {
+.card h1, .card h2 {
     text-align: center;
-}
-
-.card h2 {
-    text-align: center;
-    margin: 0%;
-    border-radius: 10px 10px 0px 0px;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
     padding: 7px;
 }
+
 .card p {
-     margin: 10px;
+    margin: 10px;
 }
+
 .card img {
     max-width: 30%;
     height: auto;
@@ -74,24 +74,24 @@ h2{
 
 aside {
     background-color: #ffffff;
-    grid-column: 4/5;
-    border:solid 1px #000000;
-    border-radius: 10px 10px 10px 10px;
+    border: solid 1px #000000;
+    border-radius: 10px;
+    grid-column: 2 / 3;
 }
-
-
 
 aside h2 {
     text-align: center;
-    margin: 0%;
-    border-radius: 10px 10px 0px 0px;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
     padding: 7px;
 }
+
 footer {
     background-color: #004080; 
     color: white;
     text-align: center;
     padding: 1rem;
+    grid-column: 1 / -1;
 }
 
 footer p {
