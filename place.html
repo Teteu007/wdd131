@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Salta</title>
+    <meta name="description" content="A page about the province of Salta in Argentina with weather and general information.">
+    <meta name="author" content="Santiago Ariel Chaparro">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Fortaleza - Brazil</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width: 1000px)" srcset="images/Fortaleza2.WebP">
+            <source media="(min-width: 500px )" srcset="images/Fortaleza2.WebP">
+            <img src="images/Fortaleza1.WebP" alt="A photo of a landscape in Fortaleza, Brazil">
+        </picture>
+        <section class="card data">
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <th>Country:</th>
+                    <td>Brazil</td>
+                </tr>
+                <tr>
+                    <th>Area:</th>
+                    <td>3.286.000 mi²</td>
+                </tr>
+                <tr>
+                    <th>Population:</th>
+                    <td>203.080.756(2022)</td>
+                </tr>
+                <tr>
+                    <th>Country:</th>
+                    <td>Brazil</td>
+                </tr>
+                <tr>
+                    <th>Capital:</th>
+                    <td>Brásilia</td>
+                </tr>
+                <tr>
+                    <th>Funded:</th>
+                    <td>1822</td>
+                </tr>
+                <tr>
+                    <th>Languages:</th>
+                    <td>Portuguese</td>
+                </tr>
+                <tr>
+                    <th>Currency:</th>
+                    <td>Real</td>
+                </tr>
+                <tr>
+                    <th>Time Zone:</th>
+                    <td>UTC -3:00</td>
+                </tr>
+                <tr>
+                    <th>Calling Code:</th>
+                    <td>+55</td>
+                </tr>
+            </table>
+        </section>
+        <section class="card temp">
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="A drawing of the sun with clouds." width="100">
+            <table>
+                <tr>
+                    <th>Temperature:</th>
+                    <td><span id="current-temp">9</span>&deg; C</td>
+                </tr>
+                <tr>
+                    <th>Conditions:</th>
+                    <td>Sunny</td>
+                </tr>
+                <tr>
+                    <th>Wind:</th>
+                    <td><span id="windspeed">13</span> km/h</td>
+                </tr>
+                <tr>
+                    <th>Windchill:</th>
+                    <td><span id="windchill"></span></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Matheus Da Nobrega | Fortaleza, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
