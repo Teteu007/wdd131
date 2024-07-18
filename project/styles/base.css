@@ -1,11 +1,11 @@
 :root {
     --font-titles: "Exo 2", sans-serif;
     --font-p: "Roboto", sans-serif;
-    --primary-color-bg: #53DD6C; 
-    --secondary-color-bg: #3F7863;
-    --bright-font: #fff;
-    --dark-font: #000;
-    --light-shadow: 0 0 1em .5em #777;
+    --primary-color-bg: #000000; 
+    --secondary-color-bg: #463F3A;
+    --bright-font: #F4F3EE;
+    --dark-font: #F4F3EE;
+    --light-shadow: 0 0 1em .5em #e0afa0;
 }
 
 body {
@@ -16,12 +16,12 @@ body {
 header {
     background-color: var(--primary-color-bg);
     margin: 0;
-    border-radius: 4em 0;
+    border-radius:0;
     box-shadow: var(--light-shadow);
 }
 
 h1 {
-    color: var(--dark-font);
+    color: #F4F3EE;
     font-family: var(--font-titles);
     padding: 1rem 0 0;
     margin: .5em;
@@ -128,6 +128,7 @@ footer {
     background-color: var(--primary-color-bg);
 }
 footer p {
+    color: #F4F3EE;
     margin: 0;
 }
 
@@ -156,11 +157,12 @@ footer p {
 
 nav, a{
     margin: 0;
+    color: #F4F3EE;
 }
 
 nav a:hover {
-    border-bottom: 3px solid yellow;
-    font-weight: 700;
+    border-bottom: 3px solid #e0afa0;
+    font-weight: 700PX;
     border-radius: 0 0 .5em .5em;
 }
 
@@ -184,7 +186,7 @@ nav a {
 }
 
 nav a.active {
-    color: #FF785A;
+    color: #e0afa0;
     text-decoration: underline 2px;
 }
 
@@ -222,7 +224,7 @@ nav a:hover {
 .wf label {
     display: block;
     padding-top: 1rem;
-    color: #139c41;
+    color: #e0afa0;
     font-size: .9rem;
 }
 
@@ -276,9 +278,9 @@ nav a:hover {
 }
 
 .wf input:required, .wf select:required {
-    border-bottom: solid 8px red;
+    border-bottom: solid 8px #e0afa0;
 }
 
 .wf input:required:valid, .wf select:required:valid {
-    border-bottom: solid 8px green;
+    border-bottom: solid 8px #e0afa0;
 }

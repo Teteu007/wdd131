@@ -6,87 +6,47 @@ const fieldList = document.querySelector("#fieldlist");
 const tournaments = [
     {
       id: "st-1234",
-      name: "Thunderball Cup",
-      datestart: "May 31 2024",
-      dateend: "June 28 2024",
-      numteams: 8
+      name: "Yuri",
+      
     },
     {
       id: "st-1235",
-      name: "The Golden Boot Championship",
-      datestart: "May 31 2024",
-      dateend: "June 21 2024",
-      numteams: 6
+      name: "Camille",
+      
     },
     {
       id: "st-1236",
-      name: "Kickin’ It Classic",
-      datestart: "May 31 2024",
-      dateend: "July 14 2024",
-      numteams: 12
+      name: "Richard",
+      
     },
     {
       id: "st-1237",
-      name: "Soccermania",
-      datestart: "May 31 2024",
-      dateend: "June 12 2024",
-      numteams: 4
+      name: "Joshep",
+     
     },
     {
       id: "st-1238",
-      name: "Goal Rush Tournament",
-      datestart: "June 28 2024",
-      dateend: "Ago 14 2024",
-      numteams: 8
+      name: "Ben",
+      
     }
   ];
 
   const fields = [
     {
-      name: "Oliden",
-      openhours: "Mon - Fri 19:00 - 23:30 PM",
-      adress: "Frias 279, temperley",
-      phone: "1173667500",
-      averagerating: 4.8,
-      ages: "all ages",
-      imgurl: "images/field1.webp"
+      name: "Matheus",
+      averagerating: 5,
+      imgurl: "images/field1.webp" 
     },
     {
-      name: "Oliden",
-      openhours: "Mon - Fri 19:00 - 23:30 PM",
-      adress: "Frias 279, temperley",
-      phone: "1173667500",
-      averagerating: 4.7,
-      ages: "all ages",
-      imgurl: "images/field1.webp"
+      name: "Cathy",
+      averagerating: 5,
+      imgurl: "images/field2.webp"
     },
     {
-      name: "Oliden",
-      openhours: "Mon - Fri 19:00 - 23:30 PM",
-      adress: "Frias 279, temperley",
-      phone: "1173667500",
-      averagerating: 4.5,
-      ages: "all ages",
-      imgurl: "images/field1.webp"
+      name: "Mike",
+      averagerating: 5,
+      imgurl: "images/field3.webp"
     },
-    {
-      name: "Oliden",
-      openhours: "Mon - Fri 19:00 - 23:30 PM",
-      adress: "Frias 279, temperley",
-      phone: "1173667500",
-      averagerating: 4.1,
-      ages: "all ages",
-      imgurl: "images/field1.webp"
-    },
-    {
-      name: "Oliden",
-      openhours: "Mon - Fri 19:00 - 23:30 PM",
-      adress: "Frias 279, temperley",
-      phone: "1173667500",
-      averagerating: 3.9,
-      ages: "all ages",
-      imgurl: "images/field1.webp"
-    }
 ];
 
 function createTournamentSelectList() {
@@ -112,16 +72,13 @@ function createFieldCards() {
 
       const img = document.createElement("img");
       img.setAttribute("src", f.imgurl);
-      img.setAttribute("alt", "A soccer field");
+      img.setAttribute("alt", "Blades Tree Removal");
       card.appendChild(img);
       
       const desc = document.createElement("div");
       desc.innerHTML = `
-      <p>🕒${f.openhours}</p>
-      <p>📍${f.adress}</p>
-      <p>📞${f.phone}</p>
       <p>${f.averagerating}⭐</p>
-      <p>${f.ages}</p>`
+      `
       card.appendChild(desc);
 
       cardsElement?.appendChild(card)
@@ -163,26 +120,13 @@ function createFieldsTable() {
   fields.forEach(f => {
     const row = document.createElement("tr");
     const header = document.createElement("th");
-    const openhours = document.createElement("td");
-    const address = document.createElement("td");
-    const phone = document.createElement("td");
     const rating = document.createElement("td");
-    const ages = document.createElement("td");
 
     header.innerText = f.name;
-    openhours.innerText = f.openhours;
-    address.innerText = f.adress;
-    phone.innerText = f.phone;
     rating.innerText = f.averagerating;
-    ages.innerText = f.ages;
-
 
     row.appendChild(header);
-    row.appendChild(openhours);
-    row.appendChild(address);
-    row.appendChild(phone);
     row.appendChild(rating);
-    row.appendChild(ages);
     
     fieldList?.appendChild(row);
   });

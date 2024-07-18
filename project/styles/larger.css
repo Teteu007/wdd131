@@ -2,11 +2,11 @@
     :root {
         --font-titles: "Exo 2", sans-serif;
         --font-p: "Roboto", sans-serif;
-        --primary-color-bg: #53DD6C; 
-        --secondary-color-bg: #3F7863;
-        --bright-font: #fff;
+        --primary-color-bg: #000000; 
+        --secondary-color-bg: #463F3A;
+        --bright-font: #F4F3EE;
         --dark-font: #000;
-        --light-shadow: 0 0 1em .5em #777;
+        --light-shadow: 0 0 1em .5em #e0afa0;
         font-size: large;
     }
 
@@ -17,11 +17,12 @@
     }
 
     h1 {
-        margin: .5em 0 ;
-        padding: .5em;
+        margin: 10px ;
+        padding: 10px;
         background-color: var(--primary-color-bg);
-        border-radius: 4em 0;
+        border-radius:0;
         box-shadow: 0px 0px .5em;
+        color: #F4F3EE;
     }
 
     #menu {
