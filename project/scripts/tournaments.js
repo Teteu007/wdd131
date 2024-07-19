@@ -6,29 +6,19 @@ const fieldList = document.querySelector("#fieldlist");
 const tournaments = [
     {
       id: "st-1234",
-      name: "Yuri",
+      name: "Tree removal",
       
     },
     {
       id: "st-1235",
-      name: "Camille",
+      name: "Stump Grinding",
       
     },
     {
       id: "st-1236",
-      name: "Richard",
+      name: "Tree trimming",
       
     },
-    {
-      id: "st-1237",
-      name: "Joshep",
-     
-    },
-    {
-      id: "st-1238",
-      name: "Ben",
-      
-    }
   ];
 
   const fields = [

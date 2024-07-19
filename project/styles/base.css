@@ -239,7 +239,8 @@ nav a:hover {
 .wf input[type="email"],
 .wf select,
 .wf input[type="number"],
-.wf textarea
+.wf textarea,
+.wf input[type="address"]
 {
     background-color: #eee;
     display: block;
