@@ -149,6 +149,7 @@ footer p {
 
 #menu::before {
 	content: "☰";
+    color: #F4F3EE;
 }
 
 #menu.open::before {
